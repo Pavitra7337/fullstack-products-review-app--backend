@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(bodyParser.json());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://5e4:pavitra@cluster0.r7lebwm.mongodb.net/product_review', {
+mongoose.connect('mongodb://localhost:27017/product_review', {
 	useNewUrlParser: true,
 	useUnifiedTopology: true,
 }).then(() => {
